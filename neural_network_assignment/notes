@@ -1,0 +1,83 @@
+ARM Assignment---
+
+GATES to be implemented:
+logic_and
+logic_or
+logic_not
+logic_xor
+logic_xnor
+logic_nand
+logic_nor
+
+All the gate implementation take THREE INPUT.
+
+INPUT
+
+000 ->  
+001 ->
+010 ->
+011 ->
+100 ->  
+101 ->
+110 ->
+111 ->
+
+ --------------------
+LOGIC_AND
+
+000 ->0
+001 ->0
+010 ->0
+011 ->0
+100 ->0
+101 ->0
+110 ->0
+111 ->1
+
+Equation:
+x1+x2+x3+b >0
+3+3+3 - 8 always >0
+
+x2+x3+b < 0
+
+x1+x2+b < 0
+x3+x1+b < 0
+
+---------------------
+LOGIC_OR
+000 ->0
+001 ->1
+010 ->1
+011 ->1
+100 ->1
+101 ->1
+110 ->1
+111 ->1
+
+Equation:
+
+0+0+0 +b <0
+0+0+x3 +b >0
+if bias = -8
+
+activation x1,x2,x3 -> 9
+
+-----------------------
+LOGIC_NOT
+
+0 ->1
+1 ->0
+
+(0*x1)+b >0
+(1*x1)+b <0 
+
+say b =3 
+then c1 is -4
+-------------------------
+Reverse for NOR and NAND
+-------------------------
+LOGIC_XOR (2l)
+Q = (a+b).(~a+~b)
+
+LOGIC XNOR (2l)
+Q = (a.b)+ (~a.~b)
